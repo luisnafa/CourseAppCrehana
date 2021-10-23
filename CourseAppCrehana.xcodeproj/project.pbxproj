@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD52971827238EE500D931AF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52971727238EE500D931AF /* Tests_iOS.swift */; };
+		DD52972327238EE500D931AF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52972227238EE500D931AF /* Tests_macOS.swift */; };
+		DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */; };
+		DD52972627238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */; };
+		DD52972727238EE500D931AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* ContentView.swift */; };
+		DD52972827238EE500D931AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* ContentView.swift */; };
+		DD52972927238EE500D931AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5296FE27238EE500D931AF /* Assets.xcassets */; };
+		DD52972A27238EE500D931AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5296FE27238EE500D931AF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD52971427238EE500D931AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5296F727238EE300D931AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD52970227238EE500D931AF;
+			remoteInfo = "CourseAppCrehana (iOS)";
+		};
+		DD52971F27238EE500D931AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5296F727238EE300D931AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD52970A27238EE500D931AF;
+			remoteInfo = "CourseAppCrehana (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAppCrehanaApp.swift; sourceTree = "<group>"; };
+		DD5296FD27238EE300D931AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD5296FE27238EE500D931AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD52970327238EE500D931AF /* CourseAppCrehana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseAppCrehana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD52970627238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD52970B27238EE500D931AF /* CourseAppCrehana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseAppCrehana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD52970D27238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD52970E27238EE500D931AF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DD52971327238EE500D931AF /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD52971727238EE500D931AF /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		DD52971927238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD52971E27238EE500D931AF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD52972227238EE500D931AF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		DD52972427238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD52970027238EE500D931AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52970827238EE500D931AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52971027238EE500D931AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52971B27238EE500D931AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD5296F627238EE300D931AF = {
+			isa = PBXGroup;
+			children = (
+				DD5296FB27238EE300D931AF /* Shared */,
+				DD52970527238EE500D931AF /* iOS */,
+				DD52970C27238EE500D931AF /* macOS */,
+				DD52971627238EE500D931AF /* Tests iOS */,
+				DD52972127238EE500D931AF /* Tests macOS */,
+				DD52970427238EE500D931AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD5296FB27238EE300D931AF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */,
+				DD5296FD27238EE300D931AF /* ContentView.swift */,
+				DD5296FE27238EE500D931AF /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DD52970427238EE500D931AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD52970327238EE500D931AF /* CourseAppCrehana.app */,
+				DD52970B27238EE500D931AF /* CourseAppCrehana.app */,
+				DD52971327238EE500D931AF /* Tests iOS.xctest */,
+				DD52971E27238EE500D931AF /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD52970527238EE500D931AF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD52970627238EE500D931AF /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		DD52970C27238EE500D931AF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD52970D27238EE500D931AF /* Info.plist */,
+				DD52970E27238EE500D931AF /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		DD52971627238EE500D931AF /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD52971727238EE500D931AF /* Tests_iOS.swift */,
+				DD52971927238EE500D931AF /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		DD52972127238EE500D931AF /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD52972227238EE500D931AF /* Tests_macOS.swift */,
+				DD52972427238EE500D931AF /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD52970227238EE500D931AF /* CourseAppCrehana (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD52972D27238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (iOS)" */;
+			buildPhases = (
+				DD5296FF27238EE500D931AF /* Sources */,
+				DD52970027238EE500D931AF /* Frameworks */,
+				DD52970127238EE500D931AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CourseAppCrehana (iOS)";
+			productName = "CourseAppCrehana (iOS)";
+			productReference = DD52970327238EE500D931AF /* CourseAppCrehana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD52973027238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (macOS)" */;
+			buildPhases = (
+				DD52970727238EE500D931AF /* Sources */,
+				DD52970827238EE500D931AF /* Frameworks */,
+				DD52970927238EE500D931AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CourseAppCrehana (macOS)";
+			productName = "CourseAppCrehana (macOS)";
+			productReference = DD52970B27238EE500D931AF /* CourseAppCrehana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD52971227238EE500D931AF /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD52973327238EE500D931AF /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				DD52970F27238EE500D931AF /* Sources */,
+				DD52971027238EE500D931AF /* Frameworks */,
+				DD52971127238EE500D931AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD52971527238EE500D931AF /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = DD52971327238EE500D931AF /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DD52971D27238EE500D931AF /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD52973627238EE500D931AF /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				DD52971A27238EE500D931AF /* Sources */,
+				DD52971B27238EE500D931AF /* Frameworks */,
+				DD52971C27238EE500D931AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD52972027238EE500D931AF /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = DD52971E27238EE500D931AF /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD5296F727238EE300D931AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DD52970227238EE500D931AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DD52970A27238EE500D931AF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DD52971227238EE500D931AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DD52970227238EE500D931AF;
+					};
+					DD52971D27238EE500D931AF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DD52970A27238EE500D931AF;
+					};
+				};
+			};
+			buildConfigurationList = DD5296FA27238EE300D931AF /* Build configuration list for PBXProject "CourseAppCrehana" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD5296F627238EE300D931AF;
+			productRefGroup = DD52970427238EE500D931AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD52970227238EE500D931AF /* CourseAppCrehana (iOS) */,
+				DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */,
+				DD52971227238EE500D931AF /* Tests iOS */,
+				DD52971D27238EE500D931AF /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD52970127238EE500D931AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52972927238EE500D931AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52970927238EE500D931AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52972A27238EE500D931AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52971127238EE500D931AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52971C27238EE500D931AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD5296FF27238EE500D931AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52972727238EE500D931AF /* ContentView.swift in Sources */,
+				DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52970727238EE500D931AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52972827238EE500D931AF /* ContentView.swift in Sources */,
+				DD52972627238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52970F27238EE500D931AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52971827238EE500D931AF /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD52971A27238EE500D931AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD52972327238EE500D931AF /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD52971527238EE500D931AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD52970227238EE500D931AF /* CourseAppCrehana (iOS) */;
+			targetProxy = DD52971427238EE500D931AF /* PBXContainerItemProxy */;
+		};
+		DD52972027238EE500D931AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */;
+			targetProxy = DD52971F27238EE500D931AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD52972B27238EE500D931AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD52972C27238EE500D931AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DD52972E27238EE500D931AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
+				PRODUCT_NAME = CourseAppCrehana;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD52972F27238EE500D931AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
+				PRODUCT_NAME = CourseAppCrehana;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD52973127238EE500D931AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
+				PRODUCT_NAME = CourseAppCrehana;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DD52973227238EE500D931AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
+				PRODUCT_NAME = CourseAppCrehana;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DD52973427238EE500D931AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "creana.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CourseAppCrehana (iOS)";
+			};
+			name = Debug;
+		};
+		DD52973527238EE500D931AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "creana.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CourseAppCrehana (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD52973727238EE500D931AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "creana.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "CourseAppCrehana (macOS)";
+			};
+			name = Debug;
+		};
+		DD52973827238EE500D931AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "creana.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "CourseAppCrehana (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD5296FA27238EE300D931AF /* Build configuration list for PBXProject "CourseAppCrehana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52972B27238EE500D931AF /* Debug */,
+				DD52972C27238EE500D931AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD52972D27238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52972E27238EE500D931AF /* Debug */,
+				DD52972F27238EE500D931AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD52973027238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52973127238EE500D931AF /* Debug */,
+				DD52973227238EE500D931AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD52973327238EE500D931AF /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52973427238EE500D931AF /* Debug */,
+				DD52973527238EE500D931AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD52973627238EE500D931AF /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD52973727238EE500D931AF /* Debug */,
+				DD52973827238EE500D931AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD5296F727238EE300D931AF /* Project object */;
+}
