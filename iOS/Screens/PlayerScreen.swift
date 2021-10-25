@@ -23,7 +23,7 @@ struct PlayerScreen: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                VideoPlayer(player: AVPlayer(url: URL(string: "https://bit.ly/swswift")!))
+                VideoPlayer(player: AVPlayer(url: URL(string: "https://crehana-videos.akamaized.net/outputs/trailer/89ef7d652e4549709347f89aa7be0f57/1f68b3fffd1641c0b03d1457a53808d4.m3u8")!))
                     .frame(width: geometry.size.width, height: 211)
                 
                 PlayerHeader()

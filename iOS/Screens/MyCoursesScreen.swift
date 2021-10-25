@@ -7,13 +7,21 @@
 
 import SwiftUI
 
-let cursos = ["Proyecto final", "Proyecto final", "Proyecto final"]
+private let cursos = ["Proyecto final", "Proyecto final", "Proyecto final"]
 
 struct MyCoursesScreen: View {
-    let padding: CGFloat = 20
-    let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
+    private let padding: CGFloat = 20
+    private let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
+    private let coursesViewModel = CoursesViewModel()
     
     init(){
+        coursesViewModel.getCourses { courses, error in
+            if (error != nil) {
+                print("Error \(error!)")
+                return
+            }
+            print("Courses \(courses!)")
+        }
         UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
     }
     
@@ -40,6 +48,10 @@ struct MyCoursesScreen: View {
                 .background(Colors.darkBackground)
             }
         }.background(Colors.darkBackground)
+    }
+    
+    func getCourses() {
+//        coursesViewModel.onFetchCoursesFailure
     }
 }
 
