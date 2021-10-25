@@ -19,7 +19,7 @@ struct CourseCell: View {
             HStack {
                 imageViewModel.image
                     .resizable()
-                    .frame(width: 90, height: 90)
+                    .frame(width: 90, height: 80)
                 
                 Spacer(minLength: 12)
                 

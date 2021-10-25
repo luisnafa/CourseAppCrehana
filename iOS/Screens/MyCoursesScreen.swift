@@ -15,6 +15,8 @@ struct MyCoursesScreen: View {
     init() {
         coursesViewModel.getCourses()
         UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
+        UITableViewCell.appearance().selectionStyle = .none
+        UITableView.appearance().separatorStyle = .none
     }
     
     var body: some View {
