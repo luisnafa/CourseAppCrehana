@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		DD52971827238EE500D931AF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52971727238EE500D931AF /* Tests_iOS.swift */; };
-		DD52972327238EE500D931AF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52972227238EE500D931AF /* Tests_macOS.swift */; };
 		DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */; };
-		DD52972627238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */; };
-		DD52972727238EE500D931AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* ContentView.swift */; };
-		DD52972827238EE500D931AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* ContentView.swift */; };
-		DD52972927238EE500D931AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5296FE27238EE500D931AF /* Assets.xcassets */; };
-		DD52972A27238EE500D931AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5296FE27238EE500D931AF /* Assets.xcassets */; };
+		DD52972727238EE500D931AF /* PlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* PlayerScreen.swift */; };
+		DD52972927238EE500D931AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5296FE27238EE500D931AF /* Images.xcassets */; };
+		DD52973A2725F94900D931AF /* PlayerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5297392725F94900D931AF /* PlayerHeader.swift */; };
+		DD52973D2725FD5500D931AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD52973C2725FD5500D931AF /* Colors.xcassets */; };
+		DD5297402725FDD800D931AF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52973F2725FDD800D931AF /* Colors.swift */; };
+		DD52974527260B2B00D931AF /* ChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52974427260B2B00D931AF /* ChapterCell.swift */; };
+		DD5297472726236400D931AF /* MyCoursesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5297462726236400D931AF /* MyCoursesScreen.swift */; };
+		DD529749272623FB00D931AF /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD529748272623FB00D931AF /* CourseCell.swift */; };
+		DD52974B2726347100D931AF /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52974A2726347100D931AF /* Images.swift */; };
+		DD52974D2726359800D931AF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52974C2726359800D931AF /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,41 +29,30 @@
 			remoteGlobalIDString = DD52970227238EE500D931AF;
 			remoteInfo = "CourseAppCrehana (iOS)";
 		};
-		DD52971F27238EE500D931AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD5296F727238EE300D931AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD52970A27238EE500D931AF;
-			remoteInfo = "CourseAppCrehana (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAppCrehanaApp.swift; sourceTree = "<group>"; };
-		DD5296FD27238EE300D931AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DD5296FE27238EE500D931AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD5296FD27238EE300D931AF /* PlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScreen.swift; sourceTree = "<group>"; };
+		DD5296FE27238EE500D931AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD52970327238EE500D931AF /* CourseAppCrehana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseAppCrehana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD52970627238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD52970B27238EE500D931AF /* CourseAppCrehana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseAppCrehana.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD52970D27238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD52970E27238EE500D931AF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		DD52971327238EE500D931AF /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD52971727238EE500D931AF /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		DD52971927238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD52971E27238EE500D931AF /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD52972227238EE500D931AF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		DD52972427238EE500D931AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5297392725F94900D931AF /* PlayerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHeader.swift; sourceTree = "<group>"; };
+		DD52973C2725FD5500D931AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DD52973F2725FDD800D931AF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DD52974427260B2B00D931AF /* ChapterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCell.swift; sourceTree = "<group>"; };
+		DD5297462726236400D931AF /* MyCoursesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoursesScreen.swift; sourceTree = "<group>"; };
+		DD529748272623FB00D931AF /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		DD52974A2726347100D931AF /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		DD52974C2726359800D931AF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DD52970027238EE500D931AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD52970827238EE500D931AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,30 +79,16 @@
 		DD5296F627238EE300D931AF = {
 			isa = PBXGroup;
 			children = (
-				DD5296FB27238EE300D931AF /* Shared */,
 				DD52970527238EE500D931AF /* iOS */,
-				DD52970C27238EE500D931AF /* macOS */,
 				DD52971627238EE500D931AF /* Tests iOS */,
-				DD52972127238EE500D931AF /* Tests macOS */,
 				DD52970427238EE500D931AF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		DD5296FB27238EE300D931AF /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */,
-				DD5296FD27238EE300D931AF /* ContentView.swift */,
-				DD5296FE27238EE500D931AF /* Assets.xcassets */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		DD52970427238EE500D931AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				DD52970327238EE500D931AF /* CourseAppCrehana.app */,
-				DD52970B27238EE500D931AF /* CourseAppCrehana.app */,
 				DD52971327238EE500D931AF /* Tests iOS.xctest */,
 				DD52971E27238EE500D931AF /* Tests macOS.xctest */,
 			);
@@ -120,17 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				DD52970627238EE500D931AF /* Info.plist */,
+				DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */,
+				DD5297432726008C00D931AF /* Screens */,
+				DD5297422726007C00D931AF /* Assets */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		DD52970C27238EE500D931AF /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				DD52970D27238EE500D931AF /* Info.plist */,
-				DD52970E27238EE500D931AF /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		DD52971627238EE500D931AF /* Tests iOS */ = {
@@ -142,13 +115,28 @@
 			path = "Tests iOS";
 			sourceTree = "<group>";
 		};
-		DD52972127238EE500D931AF /* Tests macOS */ = {
+		DD5297422726007C00D931AF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				DD52972227238EE500D931AF /* Tests_macOS.swift */,
-				DD52972427238EE500D931AF /* Info.plist */,
+				DD52974C2726359800D931AF /* Strings.swift */,
+				DD52974A2726347100D931AF /* Images.swift */,
+				DD5296FE27238EE500D931AF /* Images.xcassets */,
+				DD52973F2725FDD800D931AF /* Colors.swift */,
+				DD52973C2725FD5500D931AF /* Colors.xcassets */,
 			);
-			path = "Tests macOS";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DD5297432726008C00D931AF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DD5296FD27238EE300D931AF /* PlayerScreen.swift */,
+				DD5297392725F94900D931AF /* PlayerHeader.swift */,
+				DD52974427260B2B00D931AF /* ChapterCell.swift */,
+				DD5297462726236400D931AF /* MyCoursesScreen.swift */,
+				DD529748272623FB00D931AF /* CourseCell.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,23 +157,6 @@
 			name = "CourseAppCrehana (iOS)";
 			productName = "CourseAppCrehana (iOS)";
 			productReference = DD52970327238EE500D931AF /* CourseAppCrehana.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD52973027238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (macOS)" */;
-			buildPhases = (
-				DD52970727238EE500D931AF /* Sources */,
-				DD52970827238EE500D931AF /* Frameworks */,
-				DD52970927238EE500D931AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CourseAppCrehana (macOS)";
-			productName = "CourseAppCrehana (macOS)";
-			productReference = DD52970B27238EE500D931AF /* CourseAppCrehana.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DD52971227238EE500D931AF /* Tests iOS */ = {
@@ -217,7 +188,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DD52972027238EE500D931AF /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -234,9 +204,6 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					DD52970227238EE500D931AF = {
-						CreatedOnToolsVersion = 12.5.1;
-					};
-					DD52970A27238EE500D931AF = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					DD52971227238EE500D931AF = {
@@ -263,7 +230,6 @@
 			projectRoot = "";
 			targets = (
 				DD52970227238EE500D931AF /* CourseAppCrehana (iOS) */,
-				DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */,
 				DD52971227238EE500D931AF /* Tests iOS */,
 				DD52971D27238EE500D931AF /* Tests macOS */,
 			);
@@ -275,15 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD52972927238EE500D931AF /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD52970927238EE500D931AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD52972A27238EE500D931AF /* Assets.xcassets in Resources */,
+				DD52972927238EE500D931AF /* Images.xcassets in Resources */,
+				DD52973D2725FD5500D931AF /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,17 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD52972727238EE500D931AF /* ContentView.swift in Sources */,
+				DD52974527260B2B00D931AF /* ChapterCell.swift in Sources */,
+				DD52974D2726359800D931AF /* Strings.swift in Sources */,
+				DD52973A2725F94900D931AF /* PlayerHeader.swift in Sources */,
+				DD5297472726236400D931AF /* MyCoursesScreen.swift in Sources */,
+				DD529749272623FB00D931AF /* CourseCell.swift in Sources */,
+				DD5297402725FDD800D931AF /* Colors.swift in Sources */,
+				DD52974B2726347100D931AF /* Images.swift in Sources */,
+				DD52972727238EE500D931AF /* PlayerScreen.swift in Sources */,
 				DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD52970727238EE500D931AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD52972827238EE500D931AF /* ContentView.swift in Sources */,
-				DD52972627238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD52972327238EE500D931AF /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,11 +301,6 @@
 			isa = PBXTargetDependency;
 			target = DD52970227238EE500D931AF /* CourseAppCrehana (iOS) */;
 			targetProxy = DD52971427238EE500D931AF /* PBXContainerItemProxy */;
-		};
-		DD52972027238EE500D931AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD52970A27238EE500D931AF /* CourseAppCrehana (macOS) */;
-			targetProxy = DD52971F27238EE500D931AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,50 +459,6 @@
 			};
 			name = Release;
 		};
-		DD52973127238EE500D931AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
-				PRODUCT_NAME = CourseAppCrehana;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		DD52973227238EE500D931AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = creana.CourseAppCrehana;
-				PRODUCT_NAME = CourseAppCrehana;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		DD52973427238EE500D931AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -654,15 +561,6 @@
 			buildConfigurations = (
 				DD52972E27238EE500D931AF /* Debug */,
 				DD52972F27238EE500D931AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD52973027238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD52973127238EE500D931AF /* Debug */,
-				DD52973227238EE500D931AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

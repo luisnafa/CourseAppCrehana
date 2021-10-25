@@ -9,10 +9,28 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>CourseAppCrehana (macOS).xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DD52970227238EE500D931AF</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD52970A27238EE500D931AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD52971227238EE500D931AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD52971D27238EE500D931AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

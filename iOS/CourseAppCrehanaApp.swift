@@ -11,7 +11,7 @@ import SwiftUI
 struct CourseAppCrehanaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyCoursesScreen().preferredColorScheme(.dark)
         }
     }
 }
