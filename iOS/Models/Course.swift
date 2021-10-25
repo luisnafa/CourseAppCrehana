@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Course {
+struct Course: Hashable {
     let id: String
     let title: String
     let promoImage: String

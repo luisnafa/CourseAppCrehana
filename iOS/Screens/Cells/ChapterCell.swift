@@ -11,7 +11,7 @@ struct ChapterCell: View {
     var title: String = "Title"
     var subTitle: String = "Subtitle"
     private let padding: CGFloat = 16
-    
+
     var body: some View {
         GeometryReader { geometry in
             HStack {
@@ -25,25 +25,18 @@ struct ChapterCell: View {
                         .frame(width: abs(geometry.size.width - (padding * 2)),
                                height: 15,
                                alignment: .topLeading).font(.headline)
-                    
+
                     Text(subTitle)
                         .foregroundColor(Colors.mediumGray)
                         .font(.subheadline)
                         .frame(width: abs(geometry.size.width - (padding * 2)),
                                height: 15,
                                alignment: .topLeading)
-                    
+
                 }.frame(width: abs(geometry.size.width - (padding * 2)),
                         height: 50,
                         alignment: .topLeading)
             }
         }.frame(height:35)
-    }
-}
-
-struct ChapterCell_Previews: PreviewProvider {
-    static var previews: some View {
-        ChapterCell()
-            .background(Colors.darkBackground)
     }
 }

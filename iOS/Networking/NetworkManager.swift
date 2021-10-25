@@ -5,7 +5,7 @@
 //  Created by Nafarrate, Luis on 24/10/21.
 //
 
-import Foundation
+import UIKit
 
 protocol NetworkService {
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void)
@@ -46,5 +46,15 @@ final class NetworkManager: NetworkService {
             }
         }
         .resume()
+    }
+    
+    func downloadImage(from url: URL, completion: @escaping (UIImage?) -> ()) {
+        print("Download Started")
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            completion(UIImage(data: data))
+        }.resume()
     }
 }

@@ -11,5 +11,5 @@ class Images {
     static let greenCircle = "green_circle"
     static let greenRectangle = "green_rectangle"
     static let profileThumbnail = "profile_thumbnail"
-    static let courseExampleImage = "course_example_image"
+    static let empty_image = "empty_image"
 }

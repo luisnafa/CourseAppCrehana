@@ -6,35 +6,29 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol CoursesViewModelProtocol: AnyObject {
+protocol CoursesViewModelProtocol: ObservableObject {
     var courses: [Course] { set get }
-    var onFetchCoursesSucceed: (() -> Void)? { set get }
-    var onFetchCoursesFailure: ((Error) -> Void)? { set get }
-    func getCourses(completion: @escaping (_ course: [Course]?, _ error: Error?) -> ())
+    func getCourses()
 }
 
 final class CoursesViewModel: CoursesViewModelProtocol {
     
-    private let networkService: NetworkService
+    private let networkService = NetworkManager()
     
-    init() {
-        self.networkService = NetworkManager()
-    }
+    @Published var courses: [Course] = []
     
-    var courses: [Course] = []
-    var onFetchCoursesSucceed: (() -> Void)?
-    var onFetchCoursesFailure: ((Error) -> Void)?
-    
-    func getCourses(completion: @escaping (_ course: [Course]?, _ error: Error?) -> ()) {
+    func getCourses() {
         let request = CourseRequest()
-        networkService.request(request) { [weak self] result in
+        networkService.request(request) { result in
             switch result {
             case .success(let courses):
-                self?.courses = courses
-                completion(courses, nil)
+                DispatchQueue.main.async { [weak self] in
+                    self?.courses = courses
+                }
             case .failure(let error):
-                completion(nil, error)
+                print(error)
             }
         }
     }

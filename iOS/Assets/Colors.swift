@@ -12,4 +12,5 @@ class Colors {
     static let mediumGray = Color("mediumGray")
     static let lightGreen = Color("lightGreen")
     static let darkBackground = Color("darkBackground")
+    static let transparentGray = Color("transparentGray")
 }

@@ -7,21 +7,13 @@
 
 import SwiftUI
 
-private let cursos = ["Proyecto final", "Proyecto final", "Proyecto final"]
-
 struct MyCoursesScreen: View {
     private let padding: CGFloat = 20
     private let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
-    private let coursesViewModel = CoursesViewModel()
+    @ObservedObject private var coursesViewModel = CoursesViewModel()
     
-    init(){
-        coursesViewModel.getCourses { courses, error in
-            if (error != nil) {
-                print("Error \(error!)")
-                return
-            }
-            print("Courses \(courses!)")
-        }
+    init() {
+        coursesViewModel.getCourses()
         UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
     }
     
@@ -35,9 +27,12 @@ struct MyCoursesScreen: View {
                                alignment: .leading)
                     
                     List {
-                        ForEach(cursos, id:\.self) { course in
-                            VStack(alignment: .leading, spacing: 0){
-                                CourseCell(title: "\(course)")
+                        ForEach(coursesViewModel.courses, id:\.self) { course in
+                            VStack(alignment: .leading, spacing: 0) {
+                                CourseCell(title: course.title,
+                                           subTitle: course.professorFullName,
+                                           imageUrl: course.promoImage)
+                                
                                 NavigationLink(destination: PlayerScreen()) {
                                     EmptyView().frame(height: 0)
                                 }
@@ -48,10 +43,6 @@ struct MyCoursesScreen: View {
                 .background(Colors.darkBackground)
             }
         }.background(Colors.darkBackground)
-    }
-    
-    func getCourses() {
-//        coursesViewModel.onFetchCoursesFailure
     }
 }
 

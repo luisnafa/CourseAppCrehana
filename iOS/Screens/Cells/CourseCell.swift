@@ -10,32 +10,38 @@ import SwiftUI
 struct CourseCell: View {
     var title: String = "Title"
     var subTitle: String = "Subtitle"
-    private let padding: CGFloat = 10
-    
+    var imageUrl: String = Images.empty_image
+    private let padding: CGFloat = 40
+    @ObservedObject private var imageViewModel = ImageViewModel()
+
     var body: some View {
         GeometryReader { geometry in
             HStack {
-                Image(Images.courseExampleImage)
+                imageViewModel.image
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                
                 Spacer(minLength: 12)
+                
                 VStack(spacing: 5) {
                     Text(title).foregroundColor(.white)
+                        .lineLimit(2)
                         .font(.headline)
                         .padding(.top, 10)
                         .frame(width: geometry.size.width - (padding * 2),
-                               height: 40,
                                alignment: .leading)
-                    
-                    Text(subTitle).foregroundColor(Colors.mediumGray)
-                        .font(.subheadline)
+
+                    Text(subTitle).foregroundColor(Colors.transparentGray)
+                        .font(.caption)
                         .frame(width: geometry.size.width - (padding * 2),
                                height: 40,
                                alignment: .topLeading)
-                    
+
                 }.frame(width: geometry.size.width - (padding * 2),
                         height: 100,
                         alignment: .topLeading)
             }
-        }.frame(height:100)
+        }.frame(height:100).onAppear { imageViewModel.getImage(url: imageUrl) }
     }
 }
 
