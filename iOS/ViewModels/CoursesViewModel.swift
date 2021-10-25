@@ -26,7 +26,10 @@ final class CoursesViewModel: CoursesViewModelProtocol {
                     self?.courses = courses
                 }
             case .failure(let error):
-                print(error)
+                DispatchQueue.main.async { [weak self] in
+                    self?.courses = []
+                    print(error.localizedDescription.description)
+                }
             }
         }
     }

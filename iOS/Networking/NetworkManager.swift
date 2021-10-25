@@ -7,6 +7,13 @@
 
 import UIKit
 
+struct Errors {
+    static let urlError = NSError(domain: "com.crehana.networkError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Network error in URL"])
+    static let unsuccessfulRequest = NSError(domain: "com.crehana.networkError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Network error in URL"])
+    static let responseData = NSError(domain: "com.crehana.networkError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Network error in URL"])
+    
+}
+
 protocol NetworkService {
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void)
 }
@@ -14,13 +21,7 @@ protocol NetworkService {
 final class NetworkManager: NetworkService {
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) {
         guard let urlComponent = URLComponents(string: request.url), let url = urlComponent.url else {
-            let error = NSError(
-                domain: "Invalid",
-                code: 404,
-                userInfo: nil
-            )
-            
-            return completion(.failure(error))
+            return completion(.failure(Errors.urlError))
         }
         
         var urlRequest = URLRequest(url: url)
@@ -32,11 +33,11 @@ final class NetworkManager: NetworkService {
             }
             
             guard let response = response as? HTTPURLResponse, 200..<300 ~= response.statusCode else {
-                return completion(.failure(NSError()))
+                return completion(.failure(Errors.unsuccessfulRequest))
             }
             
             guard let data = data else {
-                return completion(.failure(NSError()))
+                return completion(.failure(Errors.responseData))
             }
             
             do {
