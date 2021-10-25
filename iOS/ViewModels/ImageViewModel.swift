@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RxSwift
 
 protocol ImageViewModelProtocol: ObservableObject {
     var image: Image { set get }
@@ -14,7 +13,6 @@ protocol ImageViewModelProtocol: ObservableObject {
 }
 
 final class ImageViewModel: ImageViewModelProtocol {
-    
     private let networkService = NetworkManager()
     
     @Published var image = Image(Images.empty_image)

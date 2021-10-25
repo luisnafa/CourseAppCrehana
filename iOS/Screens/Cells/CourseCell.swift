@@ -11,6 +11,7 @@ struct CourseCell: View {
     var title: String = "Title"
     var subTitle: String = "Subtitle"
     var imageUrl: String = Images.empty_image
+    
     private let padding: CGFloat = 40
     @ObservedObject private var imageViewModel = ImageViewModel()
 

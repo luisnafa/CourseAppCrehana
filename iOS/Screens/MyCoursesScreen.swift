@@ -35,7 +35,10 @@ struct MyCoursesScreen: View {
                                            subTitle: course.professorFullName,
                                            imageUrl: course.promoImage)
                                 
-                                NavigationLink(destination: PlayerScreen()) {
+                                NavigationLink(destination: PlayerScreen(courseId: course.id,
+                                                                         title: course.title,
+                                                                         profileName: course.professorFullName,
+                                                                         profileImageUrl: course.professorImageUrl)) {
                                     EmptyView().frame(height: 0)
                                 }
                             }

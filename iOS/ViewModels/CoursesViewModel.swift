@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RxSwift
 
 protocol CoursesViewModelProtocol: ObservableObject {
     var courses: [Course] { set get }
@@ -14,7 +13,6 @@ protocol CoursesViewModelProtocol: ObservableObject {
 }
 
 final class CoursesViewModel: CoursesViewModelProtocol {
-    
     private let networkService = NetworkManager()
     
     @Published var courses: [Course] = []

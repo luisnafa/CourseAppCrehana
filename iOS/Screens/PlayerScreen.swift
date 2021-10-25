@@ -10,31 +10,36 @@ import UIKit
 import AVKit
 import AVFoundation
 
-let chapters = ["Proyecto final", "Proyecto final", "Proyecto final"]
-
 struct PlayerScreen: View {
-    let padding: CGFloat = 16
-    let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
+    private let padding: CGFloat = 16
+    private let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
+    @ObservedObject private var videosViewModel = VideosViewModel()
     
-    init(){
-        UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
-    }
+    var courseId = VideosViewModel.emptyCourseId
+    var title = "Title"
+    var profileName = "Profile Name"
+    var profileImageUrl = Images.empty_image
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                VideoPlayer(player: AVPlayer(url: URL(string: "https://crehana-videos.akamaized.net/outputs/trailer/89ef7d652e4549709347f89aa7be0f57/1f68b3fffd1641c0b03d1457a53808d4.m3u8")!))
+                VideoPlayer(player: AVPlayer(url: URL(string: videosViewModel.firstVideoUrl)!))
                     .frame(width: geometry.size.width, height: 211)
                 
-                PlayerHeader()
+                PlayerHeader(title: title, profileName: profileName, profileImageUrl: profileImageUrl)
                 
                 List {
-                    ForEach(chapters, id:\.self) {
-                        ChapterCell(title: "\($0)")
+                    ForEach(videosViewModel.videos, id:\.self) { video in
+                        ChapterCell(title: video.title, subTitle: video.id)
                     }.listRowBackground(Colors.darkBackground)
                 }
             }
-        }.background(Colors.darkBackground)
+        }.background(Colors.darkBackground).onAppear(){
+            videosViewModel.getVideos(courseId: courseId)
+            UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
+            UITableViewCell.appearance().selectionStyle = .none
+            UITableView.appearance().separatorStyle = .none
+        }
     }
 }
 

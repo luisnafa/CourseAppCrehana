@@ -7,35 +7,31 @@
 
 import SwiftUI
 
-struct ProfileCell: View {
-    var name: String = ""
-    var body: some View {
-        HStack {
-            Image(Images.profileThumbnail)
-            Text(name).foregroundColor(.white).listRowBackground(Colors.darkBackground)
-        }
-    }
-}
-
 struct PlayerHeader: View {
-    let padding: CGFloat = 16
+    private let padding: CGFloat = 16
+    
+    var title: String = "Title"
+    var profileName: String = "Profile Name"
+    var profileImageUrl: String = Images.empty_image
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 HStack {
-                    Text("Maquetación de sitios web dinámicos con Javascript y...")
+                    Text(title)
                         .font(.title2).bold().foregroundColor(.white)
                         .frame(alignment: .leading)
+                    
+                    Spacer()
                     
                     VStack {
                         Button("...") {
                             print("Clicked on ... button")
                         }.foregroundColor(.white).font(.title)
                     }.frame(width: 50, height: 70, alignment: .topTrailing)
-                }.frame(width: geometry.size.width - (padding * 2), height: 70)
+                }.frame(width: geometry.size.width - (padding * 2), height: 70, alignment: .leading)
                 
-                ProfileCell(name: "Luis Gadea")
+                ProfileCell(name: profileName, profileImageUrl: profileImageUrl)
                     .frame(width: geometry.size.width - (padding * 2), height: 25, alignment: .leading)
                 
                 Rectangle()

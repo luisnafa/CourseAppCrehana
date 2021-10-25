@@ -26,6 +26,11 @@
 		DD5297582726446600D931AF /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5297572726446600D931AF /* Course.swift */; };
 		DD52975A2726465600D931AF /* CourseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5297592726465600D931AF /* CourseRequest.swift */; };
 		DDC81425272660E30097F6D9 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81424272660E30097F6D9 /* ImageViewModel.swift */; };
+		DDC81428272723530097F6D9 /* VideoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81427272723530097F6D9 /* VideoRequest.swift */; };
+		DDC8142A272723710097F6D9 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC81429272723710097F6D9 /* EndPoints.swift */; };
+		DDC8142C272724EF0097F6D9 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */; };
+		DDC8142E2727254C0097F6D9 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142D2727254B0097F6D9 /* Video.swift */; };
+		DDC81430272730A10097F6D9 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142F272730A10097F6D9 /* ProfileCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		DD5297572726446600D931AF /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		DD5297592726465600D931AF /* CourseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRequest.swift; sourceTree = "<group>"; };
 		DDC81424272660E30097F6D9 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		DDC81427272723530097F6D9 /* VideoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRequest.swift; sourceTree = "<group>"; };
+		DDC81429272723710097F6D9 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
+		DDC8142D2727254B0097F6D9 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		DDC8142F272730A10097F6D9 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F8F04332A24A2F672F086FBB /* Pods-CourseAppCrehana (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseAppCrehana (iOS).debug.xcconfig"; path = "Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +193,7 @@
 				DD52975B272646C500D931AF /* Requests */,
 				DD52974E27263F6600D931AF /* NetworkManager.swift */,
 				DD5297512726408700D931AF /* DataRequest.swift */,
+				DDC81429272723710097F6D9 /* EndPoints.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 			children = (
 				DD529754272643D600D931AF /* CoursesViewModel.swift */,
 				DDC81424272660E30097F6D9 /* ImageViewModel.swift */,
+				DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5297572726446600D931AF /* Course.swift */,
+				DDC8142D2727254B0097F6D9 /* Video.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 		DD52975B272646C500D931AF /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				DDC814262727233E0097F6D9 /* Video */,
 				DD52975C272646CD00D931AF /* Course */,
 			);
 			path = Requests;
@@ -225,8 +239,17 @@
 			children = (
 				DD52974427260B2B00D931AF /* ChapterCell.swift */,
 				DD529748272623FB00D931AF /* CourseCell.swift */,
+				DDC8142F272730A10097F6D9 /* ProfileCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDC814262727233E0097F6D9 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				DDC81427272723530097F6D9 /* VideoRequest.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,10 +433,15 @@
 				DDC81425272660E30097F6D9 /* ImageViewModel.swift in Sources */,
 				DD52974F27263F6600D931AF /* NetworkManager.swift in Sources */,
 				DD529749272623FB00D931AF /* CourseCell.swift in Sources */,
+				DDC81430272730A10097F6D9 /* ProfileCell.swift in Sources */,
 				DD5297402725FDD800D931AF /* Colors.swift in Sources */,
+				DDC8142A272723710097F6D9 /* EndPoints.swift in Sources */,
 				DD52974B2726347100D931AF /* Images.swift in Sources */,
 				DD52972727238EE500D931AF /* PlayerScreen.swift in Sources */,
 				DD529755272643D600D931AF /* CoursesViewModel.swift in Sources */,
+				DDC8142C272724EF0097F6D9 /* VideosViewModel.swift in Sources */,
+				DDC8142E2727254C0097F6D9 /* Video.swift in Sources */,
+				DDC81428272723530097F6D9 /* VideoRequest.swift in Sources */,
 				DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */,
 				DD5297522726408700D931AF /* DataRequest.swift in Sources */,
 			);

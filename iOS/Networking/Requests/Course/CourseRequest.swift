@@ -9,9 +9,7 @@ import Foundation
 
 struct CourseRequest: DataRequest {
     var url: String {
-        let baseURL: String = "https://61572bb98f7ea60017985113.mockapi.io/api/v1/"
-        let path: String = "Course"
-        return baseURL + path
+        return BASE_ENDPOINT + Path.course()
     }
     
     var method: HTTPMethod {

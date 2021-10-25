@@ -26,7 +26,7 @@ struct ChapterCell: View {
                                height: 15,
                                alignment: .topLeading).font(.headline)
 
-                    Text(subTitle)
+                    Text("\(subTitle) m")
                         .foregroundColor(Colors.mediumGray)
                         .font(.subheadline)
                         .frame(width: abs(geometry.size.width - (padding * 2)),

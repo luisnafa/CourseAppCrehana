@@ -49,11 +49,8 @@ final class NetworkManager: NetworkService {
     }
     
     func downloadImage(from url: URL, completion: @escaping (UIImage?) -> ()) {
-        print("Download Started")
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
             completion(UIImage(data: data))
         }.resume()
     }
