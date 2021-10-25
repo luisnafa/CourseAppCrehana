@@ -9,11 +9,13 @@ import SwiftUI
 import UIKit
 import AVKit
 import AVFoundation
+import RxSwift
 
 struct PlayerScreen: View {
     private let padding: CGFloat = 16
     private let widthForHeader = UIScreen.main.bounds.width - (16 * 2)
     @ObservedObject private var videosViewModel = VideosViewModel()
+    private let player = AVQueuePlayer()
     
     var courseId = VideosViewModel.emptyCourseId
     var title = "Title"
@@ -23,30 +25,41 @@ struct PlayerScreen: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                VideoPlayer(player: AVPlayer(url: URL(string: videosViewModel.firstVideoUrl)!))
-                    .frame(width: geometry.size.width, height: 211)
+                VideoPlayer(player: player)
+                    .frame(width: geometry.size.width, height: 211, alignment: .top)
                 
                 PlayerHeader(title: title, profileName: profileName, profileImageUrl: profileImageUrl)
                 
                 List {
                     ForEach(videosViewModel.videos, id:\.self) { video in
-                        ChapterCell(title: video.title, subTitle: video.id)
+                        Button (action: {
+                            updateVideo(urlString: video.url)
+                        }) {
+                            ChapterCell(title: video.title, subTitle: video.id)
+                        }
                     }.listRowBackground(Colors.darkBackground)
                 }
             }
-        }.background(Colors.darkBackground).onAppear(){
+        }.background(Colors.darkBackground).onAppear() {
+            updateVideo(urlString: videosViewModel.firstVideoUrl)
             videosViewModel.getVideos(courseId: courseId)
-            UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
-            UITableViewCell.appearance().selectionStyle = .none
-            UITableView.appearance().separatorStyle = .none
+            configureTableView()
+        }.onDisappear() {
+            player.removeAllItems()
         }
     }
-}
-
-extension View {
-    func Print(_ vars: Any...) -> some View {
-        for v in vars { print(v) }
-        return EmptyView()
+    
+    private func updateVideo(urlString: String) {
+        player.removeAllItems()
+        let playerItem = AVPlayerItem.init(url: URL(string: urlString)!)
+        player.insert(playerItem, after: nil)
+        player.play()
+    }
+    
+    private func configureTableView() {
+        UITableView.appearance().backgroundColor = UIColor(Colors.darkBackground)
+        UITableViewCell.appearance().selectionStyle = .gray
+        UITableView.appearance().separatorStyle = .none
     }
 }
 

@@ -180,9 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC814232726605E0097F6D9 /* Cells */,
-				DD5296FD27238EE300D931AF /* PlayerScreen.swift */,
-				DD5297392725F94900D931AF /* PlayerHeader.swift */,
-				DD5297462726236400D931AF /* MyCoursesScreen.swift */,
+				DDC8143127273D8A0097F6D9 /* MyCourses */,
+				DDC8143227273D960097F6D9 /* Videos */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -250,6 +249,23 @@
 				DDC81427272723530097F6D9 /* VideoRequest.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		DDC8143127273D8A0097F6D9 /* MyCourses */ = {
+			isa = PBXGroup;
+			children = (
+				DD5297462726236400D931AF /* MyCoursesScreen.swift */,
+			);
+			path = MyCourses;
+			sourceTree = "<group>";
+		};
+		DDC8143227273D960097F6D9 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				DD5296FD27238EE300D931AF /* PlayerScreen.swift */,
+				DD5297392725F94900D931AF /* PlayerHeader.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

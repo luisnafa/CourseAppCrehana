@@ -14,7 +14,7 @@ protocol VideosViewModelProtocol: ObservableObject {
 
 final class VideosViewModel: VideosViewModelProtocol {
     private let networkService = NetworkManager()
-    static private let defaultVideo = "https://crehana-videos.akamaized.net/outputs/trailer/89ef7d652e4549709347f89aa7be0f57/1f68b3fffd1641c0b03d1457a53808d4.m3u8"
+    static let defaultVideo = "https://crehana-videos.akamaized.net/outputs/trailer/89ef7d652e4549709347f89aa7be0f57/1f68b3fffd1641c0b03d1457a53808d4.m3u8"
     static let emptyCourseId = "0"
     
     @Published var videos: [Video] = []
