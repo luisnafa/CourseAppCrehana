@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F4918DD3B4A95763AC899D9 /* Pods_CourseAppCrehana__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB989935CF49F5E5A43067D /* Pods_CourseAppCrehana__iOS_.framework */; };
 		DD52971827238EE500D931AF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD52971727238EE500D931AF /* Tests_iOS.swift */; };
 		DD52972527238EE500D931AF /* CourseAppCrehanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */; };
 		DD52972727238EE500D931AF /* PlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5296FD27238EE300D931AF /* PlayerScreen.swift */; };
@@ -44,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FA6FBD2EF0C6C55B12C0939 /* Pods-CourseAppCrehana (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseAppCrehana (iOS).release.xcconfig"; path = "Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		DAB989935CF49F5E5A43067D /* Pods_CourseAppCrehana__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CourseAppCrehana__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5296FC27238EE300D931AF /* CourseAppCrehanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAppCrehanaApp.swift; sourceTree = "<group>"; };
 		DD5296FD27238EE300D931AF /* PlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScreen.swift; sourceTree = "<group>"; };
 		DD5296FE27238EE500D931AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -74,7 +71,6 @@
 		DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
 		DDC8142D2727254B0097F6D9 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		DDC8142F272730A10097F6D9 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		F8F04332A24A2F672F086FBB /* Pods-CourseAppCrehana (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseAppCrehana (iOS).debug.xcconfig"; path = "Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4918DD3B4A95763AC899D9 /* Pods_CourseAppCrehana__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,19 +98,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E6083A018FBE7BCC35DE8F6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F8F04332A24A2F672F086FBB /* Pods-CourseAppCrehana (iOS).debug.xcconfig */,
-				1FA6FBD2EF0C6C55B12C0939 /* Pods-CourseAppCrehana (iOS).release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D08CDDBAE3B357040D404F95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAB989935CF49F5E5A43067D /* Pods_CourseAppCrehana__iOS_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +111,6 @@
 				DD52970527238EE500D931AF /* iOS */,
 				DD52971627238EE500D931AF /* Tests iOS */,
 				DD52970427238EE500D931AF /* Products */,
-				4E6083A018FBE7BCC35DE8F6 /* Pods */,
 				D08CDDBAE3B357040D404F95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -275,11 +259,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD52972D27238EE500D931AF /* Build configuration list for PBXNativeTarget "CourseAppCrehana (iOS)" */;
 			buildPhases = (
-				22C686255321BB738002896D /* [CP] Check Pods Manifest.lock */,
 				DD5296FF27238EE500D931AF /* Sources */,
 				DD52970027238EE500D931AF /* Frameworks */,
 				DD52970127238EE500D931AF /* Resources */,
-				52E15559A2B6E08C45298A60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,48 +374,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		22C686255321BB738002896D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CourseAppCrehana (iOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		52E15559A2B6E08C45298A60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CourseAppCrehana (iOS)/Pods-CourseAppCrehana (iOS)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD5296FF27238EE500D931AF /* Sources */ = {
@@ -602,7 +542,6 @@
 		};
 		DD52972E27238EE500D931AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8F04332A24A2F672F086FBB /* Pods-CourseAppCrehana (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,7 +563,6 @@
 		};
 		DD52972F27238EE500D931AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA6FBD2EF0C6C55B12C0939 /* Pods-CourseAppCrehana (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

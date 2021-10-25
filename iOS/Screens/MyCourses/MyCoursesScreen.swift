@@ -22,7 +22,7 @@ struct MyCoursesScreen: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
-                VStack(alignment: .leading){
+                VStack(alignment: .leading) {
                     Text(Strings.mycourses).foregroundColor(.white)
                         .font(.largeTitle)
                         .frame(width: abs(geometry.size.width - (padding * 2)),

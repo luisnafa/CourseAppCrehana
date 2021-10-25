@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 import AVKit
 import AVFoundation
-import RxSwift
 
 struct PlayerScreen: View {
     private let padding: CGFloat = 16
