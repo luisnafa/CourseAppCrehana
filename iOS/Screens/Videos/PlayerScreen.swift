@@ -33,15 +33,18 @@ struct PlayerScreen: View {
                 List {
                     ForEach(videosViewModel.videos, id:\.self) { video in
                         Button (action: {
+                            player.removeAllItems()
                             updateVideo(urlString: video.url)
+                            player.play()
                         }) {
                             ChapterCell(title: video.title, subTitle: video.id)
                         }
-                    }.listRowBackground(Colors.darkBackground)
+                    }.onReceive(videosViewModel.$videos, perform: { videos in
+                        loopAllVideos(videos)
+                    }).listRowBackground(Colors.darkBackground)
                 }
             }
         }.background(Colors.darkBackground).onAppear() {
-            updateVideo(urlString: videosViewModel.firstVideoUrl)
             videosViewModel.getVideos(courseId: courseId)
             configureTableView()
         }.onDisappear() {
@@ -50,9 +53,14 @@ struct PlayerScreen: View {
     }
     
     private func updateVideo(urlString: String) {
-        player.removeAllItems()
         let playerItem = AVPlayerItem.init(url: URL(string: urlString)!)
         player.insert(playerItem, after: nil)
+    }
+    
+    private func loopAllVideos(_ videos: [Video]) {
+        for video in videos {
+            updateVideo(urlString: video.url)
+        }
         player.play()
     }
     
