@@ -30,6 +30,7 @@
 		DDC8142C272724EF0097F6D9 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */; };
 		DDC8142E2727254C0097F6D9 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142D2727254B0097F6D9 /* Video.swift */; };
 		DDC81430272730A10097F6D9 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8142F272730A10097F6D9 /* ProfileCell.swift */; };
+		DDC81443272783540097F6D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDC81442272783540097F6D9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		DDC8142B272724EF0097F6D9 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
 		DDC8142D2727254B0097F6D9 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		DDC8142F272730A10097F6D9 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		DDC81442272783540097F6D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		DD5296F627238EE300D931AF = {
 			isa = PBXGroup;
 			children = (
+				DDC81442272783540097F6D9 /* README.md */,
 				DD52970527238EE500D931AF /* iOS */,
 				DD52971627238EE500D931AF /* Tests iOS */,
 				DD52970427238EE500D931AF /* Products */,
@@ -354,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC81443272783540097F6D9 /* README.md in Resources */,
 				DD52972927238EE500D931AF /* Images.xcassets in Resources */,
 				DD52973D2725FD5500D931AF /* Colors.xcassets in Resources */,
 			);
